@@ -1,0 +1,105 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0;
+    background-color: rgb(109, 138, 204);
+    overflow-y:hidden;
+}
+#header {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 160%;
+    text-align: right;
+    width:100%;
+    background-color: rgb(109, 138, 204);
+    height: 23px;
+    display:table;
+}
+#map-canvas {
+    height:100%;
+}
+.menuitems {
+    display:block;
+    visibility:hidden;
+    position: absolute;
+    margin-top:1px;
+    -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.35);
+    border-style: solid;
+    border-color: rgb(109, 138, 204);
+    border-width: 1px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    background-color: rgb(255, 255, 255);
+    font-weight: normal;
+    line-height: 120%;
+    z-index: 1;
+    cursor: pointer;
+}
+.menuitem {
+    text-align: left;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+}
+.menuitemcheckbox {
+    padding-right: 5px;
+}
+.menuitem:hover {
+    background-color: rgb(103, 138, 199);
+}
+.menudisabled {
+    opacity: 0.5;
+    background-color: #CCC;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    cursor:default;
+}
+.infowindow {
+    font-family: calibri;
+    font-size: 10pt;
+    overflow-y: auto;
+    white-space: pre-wrap;      /* CSS3 */   
+    white-space: -moz-pre-wrap; /* Firefox */    
+    white-space: -pre-wrap;     /* Opera <7 */   
+    white-space: -o-pre-wrap;   /* Opera 7 */    
+    word-wrap: break-word;      /* IE */
+    line-height: normal ! important;
+    max-width:500px;
+}
+.aggregatewindow {
+    overflow: auto;
+    padding: 2px;
+    text-align: left;
+    font-size: 8pt;
+    border: 1px solid black;
+}
+.aggregatewindow table tbody tr th {
+    text-align: left;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+.aggregatewindow table tbody tr td {
+    padding-right: 10px;
+    border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+.aggregatewindow a {
+    color:blue;
+    cursor:pointer;
+    text-decoration:underline;
+    font-weight:bold;
+}
